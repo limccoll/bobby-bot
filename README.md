@@ -1,4 +1,4 @@
-# Bobby.Bot 🐾
+# Bobby.Bot
 
 **An AI city guide that helps visitors find Edinburgh's hidden gems instead of the same ten tourist spots.**
 
@@ -35,7 +35,7 @@ We asked four AI models the same question: *"I'm visiting Edinburgh for the firs
 Bobby.Bot passes each place through three filters. There's a Python version in [`src/filtering.py`](src/filtering.py), with tests in `tests/`.
 
 1. **Wisdom score (0–100).** This measures how far a place is from mainstream algorithmic picks. A place is shown if its score is within ±45 of the slider. The slider defaults to 85, which favours hidden gems.
-2. **Local credibility.** A high rating with few reviews ranks higher than a high rating with huge review counts. Dr Neil's Garden (5★, 103 reviews) beats Edinburgh Castle (4★, 22,841 reviews).
+2. **Local credibility.** A high rating with few reviews ranks higher than a high rating with huge review counts. Dr Neil's Garden (5, 103 reviews) beats Edinburgh Castle (4, 22,841 reviews).
 3. **Category and budget.** Places are limited to Culture, Dining and Entertainment, the niche we found in our research, plus a budget from £ to ££££.
 
 ```bash
